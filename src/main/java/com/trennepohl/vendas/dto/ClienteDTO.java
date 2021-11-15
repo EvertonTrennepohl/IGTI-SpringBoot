@@ -3,7 +3,7 @@ package com.trennepohl.vendas.dto;
 import com.trennepohl.vendas.entities.Cliente;
 
 public class ClienteDTO {
-	private long idCliente;
+	private int idCliente;
 	private String nomeCliente;
 	private String dnCliente;
 	
@@ -13,16 +13,16 @@ public class ClienteDTO {
 		this.dnCliente = entidade.getDnCliente();
 	}
 	
-	public ClienteDTO (long idCliente, String nomeCliente, String dnCliente) {
+	public ClienteDTO (int idCliente, String nomeCliente, String dnCliente) {
 		this.idCliente = idCliente;
 		this.nomeCliente = nomeCliente;
 		this.dnCliente = dnCliente;
 	}
 	
-	public long getIdCliente() {
+	public int getIdCliente() {
 		return idCliente;
 	}
-	public void setIdCliente(long idCliente) {
+	public void setIdCliente(int idCliente) {
 		this.idCliente = idCliente;
 	}
 	public String getNomeCliente() {

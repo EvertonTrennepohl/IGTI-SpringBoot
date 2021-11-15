@@ -5,7 +5,7 @@ import com.trennepohl.vendas.entities.Compras;
 
 public class ComprasDTO {
 	
-	private long idCompra;
+	private int idCompra;
 	private Double totalCompra;
 	private LocalDate dataCompra;
 	
@@ -15,15 +15,15 @@ public class ComprasDTO {
 		this.dataCompra = entidade.getDataCompra();
 	}		
 	
-	public ComprasDTO (long idCompra, Double totalCompra, LocalDate dataCompra) {
+	public ComprasDTO (int idCompra, Double totalCompra, LocalDate dataCompra) {
 		this.idCompra = idCompra;
 		this.totalCompra = totalCompra;
 		this.dataCompra = dataCompra;
 	}
-	public long getIdCompra() {
+	public int getIdCompra() {
 		return idCompra;
 	}
-	public void setIdCompra(long idCompra) {
+	public void setIdCompra(int idCompra) {
 		this.idCompra = idCompra;
 	}
 	public Double getTotalCompra() {

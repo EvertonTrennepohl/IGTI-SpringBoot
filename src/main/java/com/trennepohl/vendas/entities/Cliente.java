@@ -16,14 +16,14 @@ public class Cliente {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long idCliente;
+	private int idCliente;
 	private String nomeCliente;
 	private String dnCliente;
 	
 	@OneToMany(mappedBy = "cliente")
 	private List <Compras> compras = new ArrayList<>();
 	
-	public Cliente (long idCliente, String nomeCliente, String dnCliente) {
+	public Cliente (int idCliente, String nomeCliente, String dnCliente) {
 		super();
 		this.idCliente = idCliente;
 		this.nomeCliente = nomeCliente;
@@ -34,10 +34,10 @@ public class Cliente {
 		
 	}
 	
-	public long getIdCliente() {
+	public int getIdCliente() {
 		return idCliente;
 	}
-	public void setIdCliente(long idCliente) {
+	public void setIdCliente(int idCliente) {
 		this.idCliente = idCliente;
 	}
 	public String getNomeCliente() {

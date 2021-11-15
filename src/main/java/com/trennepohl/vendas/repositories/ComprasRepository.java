@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.trennepohl.vendas.entities.Compras;
 
 @Repository
-public interface ComprasRepository extends JpaRepository <Compras, Long> {
+public interface ComprasRepository extends JpaRepository <Compras, Integer> {
 	
 }

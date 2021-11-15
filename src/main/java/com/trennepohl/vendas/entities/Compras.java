@@ -16,7 +16,7 @@ public class Compras {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long idCompra;
+	private int idCompra;
 	private Double totalCompra;
 	private LocalDate dataCompra;
 	
@@ -24,7 +24,7 @@ public class Compras {
 	@JoinColumn(name = "idCliente")
 	private Cliente cliente;
 	
-	public Compras(long idCompra, Double totalCompra, LocalDate dataCompra) {
+	public Compras(int idCompra, Double totalCompra, LocalDate dataCompra) {
 		this.idCompra = idCompra;
 		this.totalCompra = totalCompra;
 		this.dataCompra = dataCompra;
@@ -34,10 +34,10 @@ public class Compras {
 		
 	}
 	
-	public long getIdCompra() {
+	public int getIdCompra() {
 		return idCompra;
 	}
-	public void setIdCompra(long idCompra) {
+	public void setIdCompra(int idCompra) {
 		this.idCompra = idCompra;
 	}
 	public Double getTotalCompra() {
